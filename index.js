@@ -40,7 +40,7 @@ if (!fs.existsSync(__dirname + "/auth_info_baileys/creds.json")) {
   filer.download((err, data) => {
     if (err) throw err;
     fs.writeFile(__dirname + "/auth_info_baileys/creds.json", data, () => {
-      console.log("Session downloaded ✅");
+      console.log("Session downloaded");
     });
   });
 }
@@ -61,7 +61,7 @@ async function connectToWA() {
   const prefix = config.PREFIX;
   //===========================
 
-  console.log("Connecting ❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️");
+  console.log("Connecting Levanter");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/auth_info_baileys/"
   );
@@ -92,11 +92,15 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ installed successful ✅");
-      console.log("❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ connected to whatsapp ✅");
+      console.log("Levanter Installed Successful");
+      console.log("Levanter Connected To Whatsapp");
 
-      let up = `❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ connected successful ✅`;
-      let up1 = `Hello Robin, I made bot successful`;
+      let up = `╭ » *LEVANTER MD V1*
+│ » *CONNECTED*
+│ » *OWNER* *THEEKSHANA*
+│ » *TYPING MENU*
+└────────────···`;
+      let up1 = `Hello Theekshana, I made Bot Successful`;
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
@@ -104,7 +108,7 @@ async function connectToWA() {
         },
         caption: up,
       });
-      robin.sendMessage("94705900209@s.whatsapp.net", {
+      robin.sendMessage("94720522884@s.whatsapp.net", {
         image: {
           url: `https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20cs.jpg`,
         },
