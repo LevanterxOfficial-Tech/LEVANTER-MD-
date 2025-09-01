@@ -100,17 +100,17 @@ async function connectToWA() {
 │ » *OWNER* *THEEKSHANA*
 │ » *TYPING MENU*
 └────────────···`;
-      let up1 = `Hello Theekshana, I made Bot Successful`;
+      let up1 = `*HELLO THEEKSHANA, I MADE BOT SUCCESSFUL*`;
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20cs.jpg`,
+          url: `https://raw.githubusercontent.com/LevanterxOfficial-Tech/LEVANTER-MD-SUPPORT/refs/heads/main/White%20and%20Green%20Simple%20%20Professional%20Business%20Project%20Presentation.png`,
         },
         caption: up,
       });
       robin.sendMessage("94720522884@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20cs.jpg`,
+          url: `https://raw.githubusercontent.com/LevanterxOfficial-Tech/LEVANTER-MD-SUPPORT/refs/heads/main/White%20and%20Green%20Simple%20%20Professional%20Business%20Project%20Presentation.png`,
         },
         caption: up1,
       });
@@ -305,8 +305,7 @@ async function connectToWA() {
           isMe,
           isOwner,
           groupMetadata,
-          groupName,
-          participants,
+          groupname,
           groupAdmins,
           isBotAdmins,
           isAdmins,
@@ -399,7 +398,7 @@ async function connectToWA() {
   });
 }
 app.get("/", (req, res) => {
-  res.send("hey, ❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ started✅");
+  res.send("Hey, Levanter Started");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
